@@ -1,0 +1,15 @@
+{
+    "start": {
+        "headline": "Stwórz robota!",
+        "button": "Start",
+        "button2": "Instrukcja"
+    },
+    "menuRight": {
+        "title" : "Wybierz część robota"
+    },
+    "btns": {
+        "newGame": "Nowa gra",
+        "download": "Pobierz"
+    }
+
+}

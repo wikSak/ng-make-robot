@@ -1,0 +1,6 @@
+<div class="wrapper">
+    <div *ngFor="let image of images, let i = index" class="robot" [ngStyle]="{'background-image': 'url(' + image + ')'}" [ngClass]="{'show': i == game.selectedType}" (click)="chooseType(i)">
+
+    </div>
+
+</div>

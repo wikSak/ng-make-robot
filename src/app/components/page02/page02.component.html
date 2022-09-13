@@ -1,0 +1,36 @@
+<div class="main-wrapper">
+    <h1 class="titiB headline">{{'start.headline' | translate}}</h1>
+
+    <div class="content-wrapper">
+        <app-menu id="app-menu"></app-menu>
+        <div class="containers-wrapper">
+            <div class="left-wrapper" #screen>
+                <div class="robot-wrapper"  >
+                    <div class="head" [ngStyle]="{'background-image': 'url('+ game.head[game.selectedHead] + ')', 'top.px': game.selectedBody == 3 ? 88 : 100}"></div>
+                    <div class="armRight"[ngStyle]="{'background-image': 'url('+ game.armRight[game.selectedArmRight] + ')'}"></div>
+                    <div class="legLeft" [ngStyle]="{'background-image': 'url('+ game.legLeft[game.selectedLegLeft] + ')', 'top.px': game.selectedBody == 3 ? 286 : 273}"></div>
+                    <div class="legRight" [ngStyle]="{'background-image': 'url('+ game.legRight[game.selectedLegRight] + ')', 'top.px': game.selectedBody == 3 ? 286 : 273}"></div>
+                    <div class="body" [ngStyle]="{'background-image': 'url('+ game.body[game.selectedBody] + ')'}"></div>
+                    <div class="armLeft" [ngStyle]="{'background-image': 'url('+ game.armLeft[game.selectedArmLeft] + ')'}"></div>
+                </div>
+            </div>
+            <app-right-menu id="right-menu"></app-right-menu>
+        </div>
+      
+    </div>
+    <div class="buttons-wrapper">
+        <div class="btn titiR" (click)="startPage()">
+            {{'btns.newGame'|translate}}
+        </div>
+        <div class="btn titiR" (click)="downloadImage()" >
+            {{'btns.download'|translate}}
+        </div>
+    </div>
+
+    <div id="download">
+        <img #canvas>
+        <a #downloadLink></a>
+      </div>
+
+
+</div>

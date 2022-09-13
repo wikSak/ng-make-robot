@@ -1,0 +1,14 @@
+{
+    "start": {
+        "headline": "Create a robot!",
+        "button": "Start",
+        "button2": "Instruction"
+    },
+    "menuRight": {
+        "title" : "Choose a robot part"
+    },
+    "btns": {
+        "newGame": "New game",
+        "download": "Download"
+    }
+}
