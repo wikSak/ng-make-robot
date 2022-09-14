@@ -8,6 +8,7 @@ import {TranslateService} from "@ngx-translate/core";
 })
 export class AppComponent {
   title = 'angular-app-create';
+  isEn = false;
    languageList = [
     {code: 'en', label: 'English'},
     {code: 'fr', label: 'French'}
@@ -15,6 +16,16 @@ export class AppComponent {
 
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('pl');
-    console.log(this.translate.currentLang);
+
+  }
+
+  changeLang(lang:string) {
+    this.translate.use(lang);
+    if(this.translate.currentLang == 'pl') {
+      this.isEn = false;
+    } else  if(this.translate.currentLang == 'en') {
+      this.isEn = true;
+    }
+   
   }
 }

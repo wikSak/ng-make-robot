@@ -6,10 +6,10 @@
         <div class="containers-wrapper">
             <div class="left-wrapper" #screen>
                 <div class="robot-wrapper"  >
-                    <div class="head" [ngStyle]="{'background-image': 'url('+ game.head[game.selectedHead] + ')', 'top.px': game.selectedBody == 3 ? 88 : 100}"></div>
+                    <div class="head" [ngStyle]="{'background-image': 'url('+ game.head[game.selectedHead] + ')'}" [ngClass]="{'top88': game.selectedBody == 3, 'top100': game.selectedBody != 3 }"></div>
                     <div class="armRight"[ngStyle]="{'background-image': 'url('+ game.armRight[game.selectedArmRight] + ')'}"></div>
-                    <div class="legLeft" [ngStyle]="{'background-image': 'url('+ game.legLeft[game.selectedLegLeft] + ')', 'top.px': game.selectedBody == 3 ? 286 : 273}"></div>
-                    <div class="legRight" [ngStyle]="{'background-image': 'url('+ game.legRight[game.selectedLegRight] + ')', 'top.px': game.selectedBody == 3 ? 286 : 273}"></div>
+                    <div class="legLeft" [ngStyle]="{'background-image': 'url('+ game.legLeft[game.selectedLegLeft] + ')'}" [ngClass]="{'top286': game.selectedBody == 3, 'top273': game.selectedBody != 3 }"></div>
+                    <div class="legRight" [ngStyle]="{'background-image': 'url('+ game.legRight[game.selectedLegRight] + ')'}" [ngClass]="{'top286': game.selectedBody == 3, 'top273': game.selectedBody != 3 }"></div>
                     <div class="body" [ngStyle]="{'background-image': 'url('+ game.body[game.selectedBody] + ')'}"></div>
                     <div class="armLeft" [ngStyle]="{'background-image': 'url('+ game.armLeft[game.selectedArmLeft] + ')'}"></div>
                 </div>

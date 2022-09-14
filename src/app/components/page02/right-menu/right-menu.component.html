@@ -1,6 +1,6 @@
 <div class="wrapper">
     <h1 class="titiR title">{{'menuRight.title' | translate}}</h1>
-  <div class="content-wrapper">
+  <div class="content-wrapper" [ngClass]="{'top17': game.selectedType == 3, 'top6': game.selectedType ==1}">
 
     <div class="head" [ngStyle]="{'background-image': 'url('+ game.head[game.selectedType] + ')'}" (click)="choosePart(0)"></div>
     <div class="body" [ngStyle]="{'background-image': 'url('+game.body[game.selectedType] + ')'}" (click)="choosePart(1)"></div>

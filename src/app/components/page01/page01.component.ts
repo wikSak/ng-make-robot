@@ -11,10 +11,7 @@ export class Page01Component implements OnInit {
   constructor(public translate: TranslateService, public router: Router) {}
 
   ngOnInit(): void {}
-  changeLang() {
-    this.translate.use('en');
-    console.log(this.translate.currentLang);
-  }
+
 
   startPage() {
     this.router.navigateByUrl('page02');

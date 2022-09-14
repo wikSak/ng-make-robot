@@ -1,3 +1,4 @@
 
-
 <router-outlet></router-outlet>
+<div class="pl titiR" [ngClass]="{'hide': isEn}" (click)="changeLang('pl')" >PL</div>
+<div class="en titiR" [ngClass]="{'hide': !isEn}" (click)="changeLang('en')">EN</div>

@@ -1,3 +1,46 @@
+@font-face {
+	font-family: "Titi";
+	font-weight: 300;
+	src: url(/assets/fonts/titillium-300.woff2) format("woff2"),
+	  url(/assets/fonts/titillium-300.woff) format("woff");
+  }
+  
+  @font-face {
+	font-family: "Titi";
+	font-weight: 600;
+	src: url(/assets/fonts/titillium-600.woff2) format("woff2"),
+	  url(/assets/fonts/titillium-600.woff) format("woff");
+  }
+  @font-face {
+	font-family: "Titi";
+	font-weight: 700;
+	src: url(/assets/fonts/titillium-700.woff2) format("woff2"),
+	  url(/assets/fonts/titillium-700.woff) format("woff");
+  }
+  @font-face {
+	font-family: "Titi";
+	font-weight: 400;
+	src: url(/assets/fonts/titillium-regular.woff2) format("woff2"),
+	  url(/assets/fonts/titillium-regular.woff) format("woff");
+  }
+  .titiL {
+	font-family: Titi;
+	font-weight: 300;
+  }
+  .titiR {
+	font-family: Titi;
+	font-weight: 400;
+  }
+  .titiSB {
+	font-family: Titi;
+	font-weight: 600;
+  }
+  .titiB {
+	font-family: Titi;
+	font-weight: 700;
+  }
+  
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,7 +68,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    margin: 0;
+	margin: 0;
+
 }
 ol, ul {
 	list-style: none;

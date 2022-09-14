@@ -1,0 +1,33 @@
+.pl {
+    position: absolute;
+    right: 90px;
+    color: cadetblue;
+    font-size: 23px;
+    top: 2.3vh;
+}
+.en {
+    position: absolute;
+    right: 35px;
+    color: cadetblue;
+    font-size: 23px;
+    top: 2.3vh;
+}
+
+.hide {
+    opacity: .5;
+}
+
+@media only screen and (max-width: 750px) {
+    .pl {
+        position: absolute;
+        right: 50px;
+        font-size: 2.5vh;
+        top: 2.3vh;
+    }
+    .en {
+        position: absolute;
+        right: 15px;
+        font-size: 2.5vh;
+        top: 2.3vh;
+    }
+  }
