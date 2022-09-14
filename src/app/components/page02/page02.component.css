@@ -11,8 +11,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   overflow-y: hidden;
 	overflow-x: hidden;
 }
@@ -169,11 +169,11 @@
 @media only screen and (max-width: 610px) {
   .containers-wrapper {
     flex-direction: column;
-    height: 56vh;
+    height: 86%;
     min-height: unset;
   }
   #app-menu {
-    height: 12vh;
+    height: 12%;
   }
   .armRight {
     top: 44px;
@@ -185,13 +185,13 @@
 }
   .buttons-wrapper {
     flex-direction: column;
-    height: 18vh;
+    height: 18%;
     justify-content: space-between;
   }
   .btn {
     background-color: cadetblue;
     color: white;
-    height: 8vh;
+    height: 45%;
     margin-left: 0;
     min-width: 220px;
   }
