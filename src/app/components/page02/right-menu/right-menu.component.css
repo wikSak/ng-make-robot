@@ -125,7 +125,16 @@
   .content-wrapper {
     height: 135px;
     position: relative;
+    top: -10px;
     
+  }
+  .top6 {
+    top: -16px;
+  }
+
+  .top17 {
+
+      top: -26px;
   }
 
   
